@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 PASSWORD = os.getenv("PASSWORD")
 
-"""PART 6: UPDATING AND DELETING DATA"""
+"""PART 7: UPDATING AND DELETING DATA"""
 
 update_query = """
 UPDATE
@@ -44,7 +44,7 @@ try:
 except connector.Error as e:
     print(e)
 
-"""PART 6.2: DELETE"""
+"""PART 7.1: DELETE"""
 try: 
     # Connect to existing database
     with connector.connect(
@@ -69,7 +69,7 @@ try:
 except connector.Error as e: 
     print(e)
 
-"""PART 6.3: DROP TABLE"""
+"""PART 7.2: DROP TABLE"""
 try: 
     # Connect to existing database
     with connector.connect(

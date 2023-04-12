@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 PASSWORD = os.getenv("PASSWORD")
 
-# """PART 3: CREATING TABLES"""
+"""PART 3: CREATING TABLES"""
 create_books_table = """
 CREATE TABLE books(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
